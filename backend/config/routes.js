@@ -6,8 +6,9 @@ module.exports = function (server) {
     const router = express.Router();
     server.use('/api', router);
 
-    router.route('/teste').get(function(req, res, next) {
-        res.send('Funcionou');
-    })
+    // Rotas da API
+    const BillingCycleServices = require('../api/billingCycle/billingCyclesService');
+    BillingCycleServices.register(router, '/billingCycles');
+    
 
 } 

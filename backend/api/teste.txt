@@ -1,0 +1,17 @@
+
+// Dados utilizados para teste da API
+
+name: Janeiro/21
+month: 1
+year: 2021
+credits[0][name]:Salário empresa
+credits[0][value]:2000
+credits[1][name]:Salário extra
+credits[1][value]:1500
+debts[0][name]:Internet
+debts[0][value]:89.90
+debts[0][status]:PAGO
+debts[1][name]:Aluguel
+debts[1][value]:620
+debts[1][status]:AGENDADO
+
