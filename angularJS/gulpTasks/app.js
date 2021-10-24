@@ -15,7 +15,7 @@ gulp.task('app.html', () => {
 
 gulp.task('app.css', () => {
     return gulp.src('app/**/*.css')
-    .pipe(uglify({'ugliComments': true}))
+    .pipe(uglifycss({'ugliComments': true}))
     .pipe(concat('app.min.css'))
     .pipe(gulp.dest('public/assets/css'))
 
