@@ -1,3 +1,5 @@
+// Rotas de navegação do sistema
+
 angular.module('primeiraApp').config([
   '$stateProvider',
   '$urlRouterProvider',
@@ -7,7 +9,7 @@ angular.module('primeiraApp').config([
       templateUrl: "dashboard/dashboard.html"
     }).state('billingCycle', {
       url: "/billingCycles",
-      template: "billingCycle/tabs.html"
+      templateUrl: "billingCycle/tabs.html"
     })
 
     $urlRouterProvider.otherwise('/dashboard')
