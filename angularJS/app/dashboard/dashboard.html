@@ -1,38 +1,9 @@
 <content-header name="Dashboard" small="Versão 1.0"></content-header>
 
 <sectiion class="content">
-  <div class="col-xs-4">
-    <div class="small-box bg-green">
-      <div class="inner">
-        <h3>R$ 1300,00</h3>
-        <p>Total de créditos</p>
-      </div>
-      <div class="icon"> 
-        <i class="fa fa-bank"></i>
-      </div>
-    </div>
-  </div>
-  <div class="col-xs-4">
-    <div class="small-box bg-red">
-      <div class="inner">
-        <h3>R$ 1300,00</h3>
-        <p>Total de debitos</p>
-      </div>
-      <div class="icon"> 
-        <i class="fa fa-credit-card"></i>
-      </div>
-    </div>
-  </div>
-  <div class="col-xs-4">
-    <div class="small-box bg-blue">
-      <div class="inner">
-        <h3>R$ 1300,00</h3>
-        <p>Valor consolidado</p>
-      </div>
-      <div class="icon"> 
-        <i class="fa fa-money"></i>
-      </div>
-    </div>
-  </div>
+  <!-- Componente valueBox -->
+  <value-box grid="4" color-class="bg-green" icon-class="fa fa-bank" value="R$ 10" text="Total de crétitos"></value-box>
+  <value-box grid="4" color-class="bg-red" icon-class="fa fa-credit-card" value="R$ 10" text="Total de Débitos"></value-box>
+  <value-box grid="4" color-class="bg-blue" icon-class="fa fa-money" value="R$ 0" text="Total Consolidado"></value-box>
   
 </sectiion>
