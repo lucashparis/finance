@@ -1,9 +1,9 @@
 <content-header name="Dashboard" small="Versão 1.0"></content-header>
 
-<sectiion class="content">
+<sectiion class="content" ng-controller="dashboardCtrl as dashboard">
   <!-- Componente valueBox -->
-  <value-box grid="4" color-class="bg-green" icon-class="fa fa-bank" value="R$ 10" text="Total de crétitos"></value-box>
-  <value-box grid="4" color-class="bg-red" icon-class="fa fa-credit-card" value="R$ 10" text="Total de Débitos"></value-box>
-  <value-box grid="4" color-class="bg-blue" icon-class="fa fa-money" value="R$ 0" text="Total Consolidado"></value-box>
+  <value-box grid="4" color-class="bg-green" icon-class="fa fa-bank" value="R$ {{dashboard.credit | number: 2}}" text="Total de crétitos"></value-box>
+  <value-box grid="4" color-class="bg-red" icon-class="fa fa-credit-card" value="R$ {{dashboard.debt | number: 2}}" text="Total de Débitos"></value-box>
+  <value-box grid="3" color-class="bg-blue" icon-class="fa fa-money" value="R$ {{dashboard.total | number: 2}}" text="Total Consolidado"></value-box>
   
 </sectiion>
